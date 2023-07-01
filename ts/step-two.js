@@ -53,6 +53,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     execute.onclick = function () {
         stepTwo().then(() => {
+
+            const element = document.documentElement
+
+            element.scrollIntoView({ behavior: 'smooth', block: 'end' })
         })
 
 

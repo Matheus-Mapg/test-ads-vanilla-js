@@ -29,6 +29,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     execute.onchange = function () {
         questionTwo(execute.files[0]).then(() => {
+
+            const element = document.documentElement
+
+            element.scrollIntoView({ behavior: 'smooth', block: 'end' })
         })
 
 
